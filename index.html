@@ -36,7 +36,7 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght=300;400;500;700&display=swap');
         body {
             font-family: 'Noto Sans TC', sans-serif;
             background-color: #f4f9f6;
@@ -46,22 +46,25 @@
 <body class="text-brand-text min-h-screen flex flex-col">
 
     <!-- Header / Hero Section -->
-    <header class="bg-gradient-to-b from-brand-100 to-transparent py-12 px-4 text-center">
+    <header class="bg-gradient-to-b from-brand-100 to-transparent py-12 md:py-16 px-4 sm:px-6 text-center">
         <div class="max-w-4xl mx-auto">
             <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-brand-200 text-brand-700 mb-4">
                 <i data-lucide="shield-check" class="w-4 h-4"></i> 資訊安全宣導
             </span>
             <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-brand-700 mb-4">
+                玉里地政事務所
+            </h1>
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-brand-700 mb-4">
                 智慧辦公 · 資安隨行
             </h1>
-            <p class="text-lg text-brand-sage max-w-xl mx-auto font-light leading-relaxed">
+            <p class="text-base md:text-lg text-brand-sage max-w-xl mx-auto font-light leading-relaxed">
                 LINE 雖然便利，但在處理公務時，請務必守護機密防線，保持公私分明，避免潛在的資安與法律風險。
             </p>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="max-w-5xl mx-auto px-4 py-8 flex-grow space-y-16">
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 flex-grow space-y-12 md:space-y-16">
 
         <!-- 4 Core Rules Section -->
         <section class="space-y-8">
@@ -72,7 +75,7 @@
                 <p class="text-sm text-brand-sage mt-2">簡單四步驟，養成良好數位通訊習慣</p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Card 1 -->
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-brand-100 hover:shadow-md transition-all duration-300 flex gap-4">
                     <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center text-red-500">
@@ -94,7 +97,7 @@
                     <div>
                         <h3 class="text-lg font-bold text-gray-800 mb-2">公私要分明</h3>
                         <p class="text-sm text-gray-600 leading-relaxed">
-                            在公務群組中，應避免發送與工作無關的訊息、長輩圖、推銷、私人邀約或敏感政治話題，維持群組專業與專注度。
+                            在公務群組中，應避免發送與工作無關的訊息、長輩圖、推銷、私人邀約 or 敏感政治話題，維持群組專業與專注度。
                         </p>
                     </div>
                 </div>
@@ -128,7 +131,7 @@
         </section>
 
         <!-- Interactive Quiz Section (Expanded to 8 Scenarios in Grid Layout) -->
-        <section class="bg-brand-50 rounded-3xl p-6 md:p-8 border border-brand-100 space-y-6">
+        <section class="bg-brand-50 rounded-3xl p-5 sm:p-6 md:p-8 border border-brand-100 space-y-6">
             <div class="text-center max-w-xl mx-auto space-y-2">
                 <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-brand-200 text-brand-700">
                     <i data-lucide="gamepad-2" class="w-3.5 h-3.5"></i> 互動小遊戲
@@ -138,7 +141,7 @@
             </div>
 
             <!-- Quiz Dashboard / Score Tracker -->
-            <div class="max-w-4xl mx-auto bg-white rounded-2xl p-4 shadow-sm border border-brand-100 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-brand-100 flex flex-col sm:flex-row justify-between items-center gap-4">
                 <div class="flex items-center gap-3">
                     <div class="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center text-brand-600">
                         <i data-lucide="trending-up" class="w-5 h-5"></i>
@@ -172,9 +175,9 @@
             </div>
 
             <!-- Quiz Cards Grid -->
-            <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 <!-- Question 1 -->
-                <div class="bg-white rounded-xl p-5 shadow-sm border border-brand-100 flex flex-col justify-between">
+                <div class="bg-white rounded-xl p-5 sm:p-6 shadow-sm border border-brand-100 flex flex-col justify-between">
                     <div class="space-y-3">
                         <div class="flex justify-between items-center">
                             <span class="bg-brand-100 text-brand-700 font-bold px-2.5 py-1 rounded text-xs">情境一</span>
@@ -183,11 +186,11 @@
                         <p class="font-medium text-gray-800 text-sm md:text-base">長官在 LINE 群組詢問下週會議議程草案，我可以拍照直接傳上去嗎？</p>
                     </div>
                     <div class="mt-4 space-y-2.5">
-                        <button onclick="checkAnswer(1, false, this)" class="q-btn-1 w-full text-left flex items-start gap-2 px-3.5 py-2.5 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors">
+                        <button onclick="checkAnswer(1, false, this)" class="q-btn-1 w-full text-left flex items-start gap-2 px-3.5 py-3 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-400">
                             <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
                             <span>可以，長官要得急，這樣回覆最快、最省時。</span>
                         </button>
-                        <button onclick="checkAnswer(1, true, this)" class="q-btn-1 w-full text-left flex items-start gap-2 px-3.5 py-2.5 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors">
+                        <button onclick="checkAnswer(1, true, this)" class="q-btn-1 w-full text-left flex items-start gap-2 px-3.5 py-3 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-400">
                             <i data-lucide="x" class="w-4 h-4 text-rose-600 flex-shrink-0 mt-0.5"></i>
                             <span>不行，公務草案涉及決策，應透過正式公務管道傳遞。</span>
                         </button>
@@ -200,7 +203,7 @@
                 </div>
 
                 <!-- Question 2 -->
-                <div class="bg-white rounded-xl p-5 shadow-sm border border-brand-100 flex flex-col justify-between">
+                <div class="bg-white rounded-xl p-5 sm:p-6 shadow-sm border border-brand-100 flex flex-col justify-between">
                     <div class="space-y-3">
                         <div class="flex justify-between items-center">
                             <span class="bg-brand-100 text-brand-700 font-bold px-2.5 py-1 rounded text-xs">情境二</span>
@@ -209,11 +212,11 @@
                         <p class="font-medium text-gray-800 text-sm md:text-base">朋友在 LINE 轉發了一個「免費知名品牌限時貼圖下載」的連結，看起来好可愛：</p>
                     </div>
                     <div class="mt-4 space-y-2.5">
-                        <button onclick="checkAnswer(2, false, this)" class="q-btn-2 w-full text-left flex items-start gap-2 px-3.5 py-2.5 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors">
+                        <button onclick="checkAnswer(2, false, this)" class="q-btn-2 w-full text-left flex items-start gap-2 px-3.5 py-3 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-400">
                             <i data-lucide="sparkles" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
                             <span>馬上點進去並跟著指示分享給其他群組，免費的不拿白不拿。</span>
                         </button>
-                        <button onclick="checkAnswer(2, true, this)" class="q-btn-2 w-full text-left flex items-start gap-2 px-3.5 py-2.5 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors">
+                        <button onclick="checkAnswer(2, true, this)" class="q-btn-2 w-full text-left flex items-start gap-2 px-3.5 py-3 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-400">
                             <i data-lucide="shield-alert" class="w-4 h-4 text-rose-600 flex-shrink-0 mt-0.5"></i>
                             <span>不予理會，這可能是詐騙或收集個資的釣魚網頁。</span>
                         </button>
@@ -226,7 +229,7 @@
                 </div>
 
                 <!-- Question 3 -->
-                <div class="bg-white rounded-xl p-5 shadow-sm border border-brand-100 flex flex-col justify-between">
+                <div class="bg-white rounded-xl p-5 sm:p-6 shadow-sm border border-brand-100 flex flex-col justify-between">
                     <div class="space-y-3">
                         <div class="flex justify-between items-center">
                             <span class="bg-brand-100 text-brand-700 font-bold px-2.5 py-1 rounded text-xs">情境三</span>
@@ -235,11 +238,11 @@
                         <p class="font-medium text-gray-800 text-sm md:text-base">承辦案件急需核對民眾身份，為了縮短時間，可以用 LINE 請同仁傳身分證照片嗎？</p>
                     </div>
                     <div class="mt-4 space-y-2.5">
-                        <button onclick="checkAnswer(3, true, this)" class="q-btn-3 w-full text-left flex items-start gap-2 px-3.5 py-2.5 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors">
+                        <button onclick="checkAnswer(3, true, this)" class="q-btn-3 w-full text-left flex items-start gap-2 px-3.5 py-3 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-400">
                             <i data-lucide="shield-x" class="w-4 h-4 text-rose-600 flex-shrink-0 mt-0.5"></i>
                             <span>不行，個人身分證件屬於極敏感個資，絕對禁止使用 LINE 傳遞。</span>
                         </button>
-                        <button onclick="checkAnswer(3, false, this)" class="q-btn-3 w-full text-left flex items-start gap-2 px-3.5 py-2.5 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors">
+                        <button onclick="checkAnswer(3, false, this)" class="q-btn-3 w-full text-left flex items-start gap-2 px-3.5 py-3 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-400">
                             <i data-lucide="help-circle" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
                             <span>可以，只要辦完事情後在雙方的聊天室裡將該張照片收回即可。</span>
                         </button>
@@ -252,7 +255,7 @@
                 </div>
 
                 <!-- Question 4 -->
-                <div class="bg-white rounded-xl p-5 shadow-sm border border-brand-100 flex flex-col justify-between">
+                <div class="bg-white rounded-xl p-5 sm:p-6 shadow-sm border border-brand-100 flex flex-col justify-between">
                     <div class="space-y-3">
                         <div class="flex justify-between items-center">
                             <span class="bg-brand-100 text-brand-700 font-bold px-2.5 py-1 rounded text-xs">情境四</span>
@@ -261,11 +264,11 @@
                         <p class="font-medium text-gray-800 text-sm md:text-base">早上在大型公務群組中，想在群組分享溫馨的節慶賀圖（長輩圖）或笑話八卦：</p>
                     </div>
                     <div class="mt-4 space-y-2.5">
-                        <button onclick="checkAnswer(4, false, this)" class="q-btn-4 w-full text-left flex items-start gap-2 px-3.5 py-2.5 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors">
+                        <button onclick="checkAnswer(4, false, this)" class="q-btn-4 w-full text-left flex items-start gap-2 px-3.5 py-3 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-400">
                             <i data-lucide="message-square" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
                             <span>轉發分享，這樣能拉近同仁距離，展現親和與熱情。</span>
                         </button>
-                        <button onclick="checkAnswer(4, true, this)" class="q-btn-4 w-full text-left flex items-start gap-2 px-3.5 py-2.5 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors">
+                        <button onclick="checkAnswer(4, true, this)" class="q-btn-4 w-full text-left flex items-start gap-2 px-3.5 py-3 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-400">
                             <i data-lucide="check-square" class="w-4 h-4 text-rose-600 flex-shrink-0 mt-0.5"></i>
                             <span>克制轉發，公務群組應專注公務，避免無關訊息洗版影響工作。</span>
                         </button>
@@ -278,7 +281,7 @@
                 </div>
 
                 <!-- Question 5 -->
-                <div class="bg-white rounded-xl p-5 shadow-sm border border-brand-100 flex flex-col justify-between">
+                <div class="bg-white rounded-xl p-5 sm:p-6 shadow-sm border border-brand-100 flex flex-col justify-between">
                     <div class="space-y-3">
                         <div class="flex justify-between items-center">
                             <span class="bg-brand-100 text-brand-700 font-bold px-2.5 py-1 rounded text-xs">情境五</span>
@@ -287,11 +290,11 @@
                         <p class="font-medium text-gray-800 text-sm md:text-base">辦公時間，LINE 上的私人聊天群組非常熱鬧，朋友一直標記我討論聚餐地點：</p>
                     </div>
                     <div class="mt-4 space-y-2.5">
-                        <button onclick="checkAnswer(5, true, this)" class="q-btn-5 w-full text-left flex items-start gap-2 px-3.5 py-2.5 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors">
+                        <button onclick="checkAnswer(5, true, this)" class="q-btn-5 w-full text-left flex items-start gap-2 px-3.5 py-3 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-400">
                             <i data-lucide="bell-off" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
                             <span>暫時關閉通知，工作時間專注公務，休息時間再開啟聊天。</span>
                         </button>
-                        <button onclick="checkAnswer(5, false, this)" class="q-btn-5 w-full text-left flex items-start gap-2 px-3.5 py-2.5 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors">
+                        <button onclick="checkAnswer(5, false, this)" class="q-btn-5 w-full text-left flex items-start gap-2 px-3.5 py-3 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-400">
                             <i data-lucide="smartphone" class="w-4 h-4 text-rose-600 flex-shrink-0 mt-0.5"></i>
                             <span>趁公務空檔偶爾回一下，只要工作有做完就沒關係。</span>
                         </button>
@@ -304,7 +307,7 @@
                 </div>
 
                 <!-- Question 6 -->
-                <div class="bg-white rounded-xl p-5 shadow-sm border border-brand-100 flex flex-col justify-between">
+                <div class="bg-white rounded-xl p-5 sm:p-6 shadow-sm border border-brand-100 flex flex-col justify-between">
                     <div class="space-y-3">
                         <div class="flex justify-between items-center">
                             <span class="bg-brand-100 text-brand-700 font-bold px-2.5 py-1 rounded text-xs">情境六</span>
@@ -313,11 +316,11 @@
                         <p class="font-medium text-gray-800 text-sm md:text-base">有陌生帳號加入我好友，並聲稱是「內部同仁要建立公務合作群組」：</p>
                     </div>
                     <div class="mt-4 space-y-2.5">
-                        <button onclick="checkAnswer(6, false, this)" class="q-btn-6 w-full text-left flex items-start gap-2 px-3.5 py-2.5 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors">
+                        <button onclick="checkAnswer(6, false, this)" class="q-btn-6 w-full text-left flex items-start gap-2 px-3.5 py-3 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-400">
                             <i data-lucide="user-plus" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
                             <span>既然他說是同仁，那就先答應並加入群組，方便之後聯繫。</span>
                         </button>
-                        <button onclick="checkAnswer(6, true, this)" class="q-btn-6 w-full text-left flex items-start gap-2 px-3.5 py-2.5 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors">
+                        <button onclick="checkAnswer(6, true, this)" class="q-btn-6 w-full text-left flex items-start gap-2 px-3.5 py-3 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-400">
                             <i data-lucide="check-circle-2" class="w-4 h-4 text-rose-600 flex-shrink-0 mt-0.5"></i>
                             <span>不盲目信任，應先透過機關內部通訊錄或公務電話核實其身分。</span>
                         </button>
@@ -330,7 +333,7 @@
                 </div>
 
                 <!-- Question 7 -->
-                <div class="bg-white rounded-xl p-5 shadow-sm border border-brand-100 flex flex-col justify-between">
+                <div class="bg-white rounded-xl p-5 sm:p-6 shadow-sm border border-brand-100 flex flex-col justify-between">
                     <div class="space-y-3">
                         <div class="flex justify-between items-center">
                             <span class="bg-brand-100 text-brand-700 font-bold px-2.5 py-1 rounded text-xs">情境七</span>
@@ -339,11 +342,11 @@
                         <p class="font-medium text-gray-800 text-sm md:text-base">公務群組討論中，同事之間有爭執、或者長官交辦的內容有些笑料，我能截圖發給無關的私密朋友圈笑笑嗎？</p>
                     </div>
                     <div class="mt-4 space-y-2.5">
-                        <button onclick="checkAnswer(7, true, this)" class="q-btn-7 w-full text-left flex items-start gap-2 px-3.5 py-2.5 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors">
+                        <button onclick="checkAnswer(7, true, this)" class="q-btn-7 w-full text-left flex items-start gap-2 px-3.5 py-3 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-400">
                             <i data-lucide="alert-triangle" class="w-4 h-4 text-rose-600 flex-shrink-0 mt-0.5"></i>
                             <span>絕對不能，截圖公務群組對話發到私人聊天室，恐涉及洩密、侵害個資與不合適的工作紀律。</span>
                         </button>
-                        <button onclick="checkAnswer(7, false, this)" class="q-btn-7 w-full text-left flex items-start gap-2 px-3.5 py-2.5 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors">
+                        <button onclick="checkAnswer(7, false, this)" class="q-btn-7 w-full text-left flex items-start gap-2 px-3.5 py-3 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-400">
                             <i data-lucide="camera" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
                             <span>只要遮住人名，且朋友圈都是信得過的人，截圖分享也無妨。</span>
                         </button>
@@ -356,7 +359,7 @@
                 </div>
 
                 <!-- Question 8 -->
-                <div class="bg-white rounded-xl p-5 shadow-sm border border-brand-100 flex flex-col justify-between">
+                <div class="bg-white rounded-xl p-5 sm:p-6 shadow-sm border border-brand-100 flex flex-col justify-between">
                     <div class="space-y-3">
                         <div class="flex justify-between items-center">
                             <span class="bg-brand-100 text-brand-700 font-bold px-2.5 py-1 rounded text-xs">情境八</span>
@@ -365,11 +368,11 @@
                         <p class="font-medium text-gray-800 text-sm md:text-base">為防範因個人設備遺失或更換新手機導致公務資料遭有心人士外流，我應定期：</p>
                     </div>
                     <div class="mt-4 space-y-2.5">
-                        <button onclick="checkAnswer(8, false, this)" class="q-btn-8 w-full text-left flex items-start gap-2 px-3.5 py-2.5 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors">
+                        <button onclick="checkAnswer(8, false, this)" class="q-btn-8 w-full text-left flex items-start gap-2 px-3.5 py-3 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-400">
                             <i data-lucide="database" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
                             <span>不做任何設定，只要手機加鎖就好，否則太麻煩。</span>
                         </button>
-                        <button onclick="checkAnswer(8, true, this)" class="q-btn-8 w-full text-left flex items-start gap-2 px-3.5 py-2.5 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors">
+                        <button onclick="checkAnswer(8, true, this)" class="q-btn-8 w-full text-left flex items-start gap-2 px-3.5 py-3 border border-gray-200 rounded-lg text-xs md:text-sm hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-400">
                             <i data-lucide="shield-check" class="w-4 h-4 text-rose-600 flex-shrink-0 mt-0.5"></i>
                             <span>清理舊聊天暫存、開啟雙重驗證、更換裝置時確實執行舊機資料清除。</span>
                         </button>
